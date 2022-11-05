@@ -1,4 +1,3 @@
-// FFI signature of the hello_world C function
 import 'dart:ffi';
 
 import 'dart:io';
@@ -14,12 +13,12 @@ abstract class CCalculator {
   static late CalcAreaUnderSinDart calcAreaUnderSin;
 
   static void init() {
-    final DynamicLibrary nativeAddLib =
+    final DynamicLibrary nativeLib =
         Platform.isAndroid ? DynamicLibrary.open('libexample_lib.so') : DynamicLibrary.process();
 
-    calcPi = nativeAddLib.lookup<NativeFunction<CalcPiC>>('calc_pi').asFunction();
+    calcPi = nativeLib.lookup<NativeFunction<CalcPiC>>('calc_pi').asFunction();
 
     calcAreaUnderSin =
-        nativeAddLib.lookup<NativeFunction<CalcAreaUnderSinC>>('calc_area_under_sin').asFunction();
+        nativeLib.lookup<NativeFunction<CalcAreaUnderSinC>>('calc_area_under_sin').asFunction();
   }
 }
