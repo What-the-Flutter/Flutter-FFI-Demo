@@ -62,7 +62,7 @@ class _ExamplePageState extends State<ExamplePage> {
 
   bool isCalculating = false;
 
-  void _calculate() {
+  void _calculate() async {
     setState(() {
       isCalculating = true;
     });
@@ -113,64 +113,86 @@ class _ExamplePageState extends State<ExamplePage> {
       body: FittedBox(
         fit: BoxFit.scaleDown,
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              SvgPicture.asset(
-                'res/sin.svg',
-                width: 400,
-                height: 300,
-              ),
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const Text('C calculations'),
-                  _dataRow('pi:', cPi, cPiTime),
-                  _dataRow('area:', cArea, cAreaTime),
-                  const Text('Dart calculations'),
-                  _dataRow('pi:', dartPi, dartPiTime),
-                  _dataRow('area:', dartArea, dartAreaTime),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      DropdownButton<int>(
-                        value: piPrecision,
-                        items: piPrecisionsList
-                            .map(
-                              (e) => DropdownMenuItem<int>(
+          child: DefaultTextStyle(
+            style: const TextStyle(fontSize: 18, color: Colors.black),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                SvgPicture.asset(
+                  'res/sin.svg',
+                  width: 400,
+                  height: 300,
+                ),
+                Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const SizedBox(height: 10),
+                    const Text('C calculations'),
+                    const SizedBox(height: 10),
+                    _dataRow('pi:', cPi, cPiTime),
+                    const SizedBox(height: 5),
+                    _dataRow('area:', cArea, cAreaTime),
+                    const SizedBox(height: 20),
+                    const Text('Dart calculations'),
+                    const SizedBox(height: 10),
+                    _dataRow('pi:', dartPi, dartPiTime),
+                    const SizedBox(height: 5),
+                    _dataRow('area:', dartArea, dartAreaTime),
+                    SizedBox(
+                      width: 250,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          const Text('Pi precision'),
+                          const SizedBox(width: 30),
+                          DropdownButton<int>(
+                            value: piPrecision,
+                            items: piPrecisionsList
+                                .map(
+                                  (e) => DropdownMenuItem<int>(
+                                    value: e,
+                                    child: Text(e.toString()),
+                                  ),
+                                )
+                                .toList(),
+                            onChanged: (item) => setState(() {
+                              piPrecision = item!;
+                            }),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 250,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          const Text('Area precision'),
+                          const SizedBox(width: 30),
+                          DropdownButton<int>(
+                            value: areaPrecision,
+                            items: areaPrecisionsList
+                                .map(
+                                  (e) => DropdownMenuItem<int>(
                                 value: e,
                                 child: Text(e.toString()),
                               ),
                             )
-                            .toList(),
-                        onChanged: (item) => setState(() {
-                          piPrecision = item!;
-                        }),
+                                .toList(),
+                            onChanged: (item) => setState(() {
+                              areaPrecision = item!;
+                            }),
+                          ),
+                        ],
                       ),
-                      const SizedBox(width: 30),
-                      DropdownButton<int>(
-                        value: areaPrecision,
-                        items: areaPrecisionsList
-                            .map(
-                              (e) => DropdownMenuItem<int>(
-                                value: e,
-                                child: Text(e.toString()),
-                              ),
-                            )
-                            .toList(),
-                        onChanged: (item) => setState(() {
-                          areaPrecision = item!;
-                        }),
-                      ),
-                      const SizedBox(width: 30),
-                      ElevatedButton(onPressed: _calculate, child: const Text('Calculate!')),
-                    ],
-                  ),
-                  if (isCalculating) const CircularProgressIndicator(),
-                ],
-              ),
-            ],
+                    ),
+                    ElevatedButton(onPressed: _calculate, child: const Text('Calculate!')),
+                    if (isCalculating) const CircularProgressIndicator(),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -188,7 +210,7 @@ class _ExamplePageState extends State<ExamplePage> {
     );
   }
 
-  Widget _paddedText(String text, [double width = 150, Alignment alignment = Alignment.center]) {
+  Widget _paddedText(String text, [double width = 180, Alignment alignment = Alignment.center]) {
     return SizedBox(
       width: width,
       child: Align(
