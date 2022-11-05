@@ -1,0 +1,3 @@
+C:/Users/kingt/StudioProjects/ffi_test/android/app/.cxx/cmake/debug/x86_64/CMakeFiles/example_lib.dir
+C:/Users/kingt/StudioProjects/ffi_test/android/app/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/kingt/StudioProjects/ffi_test/android/app/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir
