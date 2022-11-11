@@ -29,3 +29,11 @@
 94	141	689333552	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libexample_lib.so	6337e8407391b54d
 2	114	689334370	CMakeFiles/example_lib.dir/example.cpp.o	12b10185eeeb5c14
 114	165	689334370	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libexample_lib.so	6337e8407391b54d
+1	58	689838215	CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o	921a64c23880c65a
+3	125	689838215	CMakeFiles/example_lib.dir/calc_example/example.cpp.o	2d381377649e6c81
+125	191	689838215	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libexample_lib.so	240ef4b2b089ec57
+58	191	689838215	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libstruct_example_lib.so	2bf4621d3da257e1
+1	48	689838637	CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o	921a64c23880c65a
+48	96	689838637	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libstruct_example_lib.so	2bf4621d3da257e1
+5	53	689841511	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libexample_lib.so	240ef4b2b089ec57
+2	53	689841511	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/x86/libstruct_example_lib.so	2bf4621d3da257e1

@@ -15,6 +15,13 @@
       "abi": "x86_64",
       "output": "C:\\Users\\kingt\\StudioProjects\\ffi_test\\build\\app\\intermediates\\cmake\\debug\\obj\\x86_64\\libexample_lib.so",
       "runtimeFiles": []
+    },
+    "struct_example_lib-Debug-x86_64": {
+      "artifactName": "struct_example_lib",
+      "buildCommand": "C:\\Users\\kingt\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\.cxx\\cmake\\debug\\x86_64\" struct_example_lib",
+      "abi": "x86_64",
+      "output": "C:\\Users\\kingt\\StudioProjects\\ffi_test\\build\\app\\intermediates\\cmake\\debug\\obj\\x86_64\\libstruct_example_lib.so",
+      "runtimeFiles": []
     }
   }
 }

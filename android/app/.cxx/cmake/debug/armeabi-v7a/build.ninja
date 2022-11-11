@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: HelloWorld
+# Project: Project
 # Configuration: Debug
 # =============================================================================
 
@@ -30,6 +30,39 @@ ninja_required_version = 1.5
 include rules.ninja
 
 # =============================================================================
+# Object build statements for SHARED_LIBRARY target struct_example_lib
+
+
+#############################################
+# Order-only phony target for struct_example_lib
+
+build cmake_object_order_depends_target_struct_example_lib: phony
+build CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o: CXX_COMPILER__struct_example_lib ../../../../struct_example/struct_example.cpp || cmake_object_order_depends_target_struct_example_lib
+  DEFINES = -Dstruct_example_lib_EXPORTS
+  DEP_FILE = CMakeFiles\struct_example_lib.dir\struct_example\struct_example.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
+  OBJECT_DIR = CMakeFiles\struct_example_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\struct_example_lib.dir\struct_example
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target struct_example_lib
+
+
+#############################################
+# Link the shared library C:\Users\kingt\StudioProjects\ffi_test\build\app\intermediates\cmake\debug\obj\armeabi-v7a\libstruct_example_lib.so
+
+build C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so: CXX_SHARED_LIBRARY_LINKER__struct_example_lib CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
+  LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments
+  LINK_LIBRARIES = -latomic -lm
+  OBJECT_DIR = CMakeFiles\struct_example_lib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  SONAME = libstruct_example_lib.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = C:\Users\kingt\StudioProjects\ffi_test\build\app\intermediates\cmake\debug\obj\armeabi-v7a\libstruct_example_lib.so
+  TARGET_PDB = struct_example_lib.so.dbg
+# =============================================================================
 # Object build statements for SHARED_LIBRARY target example_lib
 
 
@@ -37,12 +70,12 @@ include rules.ninja
 # Order-only phony target for example_lib
 
 build cmake_object_order_depends_target_example_lib: phony
-build CMakeFiles/example_lib.dir/example.cpp.o: CXX_COMPILER__example_lib ../../../../example.cpp || cmake_object_order_depends_target_example_lib
+build CMakeFiles/example_lib.dir/calc_example/example.cpp.o: CXX_COMPILER__example_lib ../../../../calc_example/example.cpp || cmake_object_order_depends_target_example_lib
   DEFINES = -Dexample_lib_EXPORTS
-  DEP_FILE = CMakeFiles\example_lib.dir\example.cpp.o.d
+  DEP_FILE = CMakeFiles\example_lib.dir\calc_example\example.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
   OBJECT_DIR = CMakeFiles\example_lib.dir
-  OBJECT_FILE_DIR = CMakeFiles\example_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles\example_lib.dir\calc_example
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target example_lib
@@ -51,7 +84,7 @@ build CMakeFiles/example_lib.dir/example.cpp.o: CXX_COMPILER__example_lib ../../
 #############################################
 # Link the shared library C:\Users\kingt\StudioProjects\ffi_test\build\app\intermediates\cmake\debug\obj\armeabi-v7a\libexample_lib.so
 
-build C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so: CXX_SHARED_LIBRARY_LINKER__example_lib CMakeFiles/example_lib.dir/example.cpp.o
+build C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so: CXX_SHARED_LIBRARY_LINKER__example_lib CMakeFiles/example_lib.dir/calc_example/example.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -latomic -lm
@@ -86,6 +119,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build example_lib: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so
 build libexample_lib.so: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so
+build libstruct_example_lib.so: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so
+build struct_example_lib: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so
 # =============================================================================
 # Folder targets.
 
@@ -97,7 +132,7 @@ build libexample_lib.so: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app
 #############################################
 # The main all target.
 
-build all: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so
+build all: phony C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so C$:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so
 
 #############################################
 # Make the all target the default.

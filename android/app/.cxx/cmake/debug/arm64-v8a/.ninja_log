@@ -29,3 +29,11 @@
 93	138	689333552	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libexample_lib.so	117644a1e3503449
 2	108	689334370	CMakeFiles/example_lib.dir/example.cpp.o	95b4a0f8231ce601
 108	164	689334370	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libexample_lib.so	117644a1e3503449
+0	52	689838215	CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o	16ea4961d39a4b18
+3	120	689838215	CMakeFiles/example_lib.dir/calc_example/example.cpp.o	f9dc67871c4dbcda
+53	161	689838215	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libstruct_example_lib.so	6fe3e7eac63b5c4c
+120	165	689838215	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libexample_lib.so	47916dd50e17ecf4
+1	50	689838637	CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o	16ea4961d39a4b18
+51	99	689838637	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libstruct_example_lib.so	6fe3e7eac63b5c4c
+2	51	689841511	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libstruct_example_lib.so	6fe3e7eac63b5c4c
+5	51	689841511	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/arm64-v8a/libexample_lib.so	47916dd50e17ecf4

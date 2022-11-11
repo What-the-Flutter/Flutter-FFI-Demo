@@ -9,6 +9,13 @@
   ],
   "buildTargetsCommand": "C:\\Users\\kingt\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "struct_example_lib-Debug-x86": {
+      "artifactName": "struct_example_lib",
+      "buildCommand": "C:\\Users\\kingt\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\.cxx\\cmake\\debug\\x86\" struct_example_lib",
+      "abi": "x86",
+      "output": "C:\\Users\\kingt\\StudioProjects\\ffi_test\\build\\app\\intermediates\\cmake\\debug\\obj\\x86\\libstruct_example_lib.so",
+      "runtimeFiles": []
+    },
     "example_lib-Debug-x86": {
       "artifactName": "example_lib",
       "buildCommand": "C:\\Users\\kingt\\AppData\\Local\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\.cxx\\cmake\\debug\\x86\" example_lib",

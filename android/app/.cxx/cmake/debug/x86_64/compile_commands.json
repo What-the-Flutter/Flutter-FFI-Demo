@@ -1,7 +1,13 @@
 [
 {
   "directory": "C:/Users/kingt/StudioProjects/ffi_test/android/app/.cxx/cmake/debug/x86_64",
-  "command": "C:\\Users\\kingt\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/kingt/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/kingt/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dexample_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\example_lib.dir\\example.cpp.o -c C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\example.cpp",
-  "file": "C:/Users/kingt/StudioProjects/ffi_test/android/app/example.cpp"
+  "command": "C:\\Users\\kingt\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/kingt/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/kingt/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dstruct_example_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\struct_example_lib.dir\\struct_example\\struct_example.cpp.o -c C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\struct_example\\struct_example.cpp",
+  "file": "C:/Users/kingt/StudioProjects/ffi_test/android/app/struct_example/struct_example.cpp"
+},
+
+{
+  "directory": "C:/Users/kingt/StudioProjects/ffi_test/android/app/.cxx/cmake/debug/x86_64",
+  "command": "C:\\Users\\kingt\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/kingt/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/kingt/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dexample_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\example_lib.dir\\calc_example\\example.cpp.o -c C:\\Users\\kingt\\StudioProjects\\ffi_test\\android\\app\\calc_example\\example.cpp",
+  "file": "C:/Users/kingt/StudioProjects/ffi_test/android/app/calc_example/example.cpp"
 }
 ]

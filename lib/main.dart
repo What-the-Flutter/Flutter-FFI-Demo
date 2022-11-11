@@ -1,4 +1,7 @@
+import 'dart:ffi';
+
 import 'package:ffi_test/calculator/c_calculator.dart';
+import 'package:ffi_test/structs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -6,6 +9,8 @@ import 'calculator/dart_calculator.dart';
 
 void main() {
   CCalculator.init();
+  StructsExample.init();
+  StructsExample.main();
   runApp(const MyApp());
 }
 

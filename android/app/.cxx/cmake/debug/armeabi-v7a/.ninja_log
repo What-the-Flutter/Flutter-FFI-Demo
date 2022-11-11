@@ -29,3 +29,11 @@
 104	159	689333552	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so	f5b90c60417b11aa
 1	100	689334370	CMakeFiles/example_lib.dir/example.cpp.o	4ea9bb91d624b5da
 100	151	689334370	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so	f5b90c60417b11aa
+10	539	689838160	CMakeFiles/example_lib.dir/calc_example/example.cpp.o	1c02bda5de67a3ce
+8	153	689838194	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so	a568267fd23e6a0b
+1	58	689838215	CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o	1cec9388ffa8e9b3
+58	107	689838215	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so	bbdba5bdb873ff9a
+1	59	689838637	CMakeFiles/struct_example_lib.dir/struct_example/struct_example.cpp.o	1cec9388ffa8e9b3
+60	113	689838637	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so	bbdba5bdb873ff9a
+4	59	689841511	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libstruct_example_lib.so	bbdba5bdb873ff9a
+1	59	689841511	C:/Users/kingt/StudioProjects/ffi_test/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libexample_lib.so	a568267fd23e6a0b
